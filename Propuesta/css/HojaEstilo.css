@@ -1,0 +1,342 @@
+*{
+	font-family:verdana;
+	font-size:14px;
+}
+/*Selector tipo Etiqueta*/
+a, a:hover, a:active{
+	text-decoration:none;
+	color:#000;
+	
+}
+body{
+	margin:0;
+}
+/*Podemos Agrupar selectores para dar
+estilo una sola vez*/
+#Cabecera,#Menu,#Contenido,#Pie, #CajaPaneles, .BarraTitulo{
+	width:1016px;
+	margin:auto;
+	color:#fff;
+	padding:4px; 
+}
+#Menu {
+	min-height:30px;
+}
+#Menu ul{
+	margin-top:0px;
+	padding-left:2px;
+
+}
+#Menu ul li a{
+	color:#fff;
+}
+#Menu ul li {
+	
+	display:inline; 
+	padding:0.6em;
+	padding-bottom:0.2em;
+	margin-right:0.1em;
+	border:1px dotted #1abef4;
+}
+
+p{text-align:justify; font-size:1.3em;}
+
+#Menu ul li:hover {
+	background:#1abef4;
+}
+#Menu ul li a{
+	font-size:1.6em;
+}
+#Notificaciones{
+	color:#ba4329;
+	font-size:16px;
+}
+/*Espacio para redes sociales (Caja Principal) en el Header*/
+.SocialMedia{
+	float:right;
+	width:230px;
+	text-align:center;
+	margin-top:12px;
+	margin-left:4px;
+	padding-top:0.4em;
+}
+/*Espacio para redes sociales (Caja de Iconoces)*/
+.SocialMedia .SocialIcons{
+	width:100%;
+	display:block;
+	border-top: dotted 1px #fff;
+	margin-top:10px;
+
+	padding:0.4em;
+	box-sizing:border-box;
+	min-height:65px;
+}
+/*Iconos Social Media*/
+.SocialMedia .SocialIcons img{
+	width:20%;
+	display:inline-table;
+}
+/*Iconos Social Media*/
+.SocialMedia .SocialIcons a{
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:13px;
+}
+.PerfilUsuario{
+	width:100%;
+	background:#f0f0f0;
+	text-align:center;
+	padding:15px;
+	box-sizing:border-boz;
+}
+.PerfilUsuario img{
+	width:90%;
+	border-radius:50%;
+}
+.Errores{
+	font-size:17px;
+	color:#fd7e14;
+}
+/*Espacio para redes sociales (Caja Principal) en el Footer
+Solo lo flotamos a la izquierda y le dejamos todos los mismos estilos
+colocados en el Header
+*/
+#Pie .SocialMedia{
+	float:right;
+	background:#179cc8;
+	border: 0;
+}
+#ContenCabecera{
+	background:#1abef4;	
+	width:100%;
+}
+#Cabecera{
+	height:120px;
+}
+#Cabecera img{
+	height:95%;
+}
+
+#ContenMenu{
+	width:100%;
+	background:#73d7f2;	
+	height:40px;
+}
+#Menu{
+	height:20px;
+}
+#Contenido{	
+	min-height:400px;
+	color:#000;
+}
+#Contenido h3{	
+	color:#000;
+}
+#ContenPie{
+	width:100%;
+	background:#1abef4;	
+	min-height:160px;
+}
+#Pie{
+	height:110px;
+
+}
+#frmContacto{
+	width:90%;
+	margin:5px auto;
+}
+
+.Campos>input[type=submitr],.Campos{
+	width:90%;
+	padding:5px;
+	margin:10px auto;
+	display:block;
+	border-radius:12px;
+	color:#690140;
+	font-size:18px;
+	background:#f0f0f0;
+}
+.Campos+input[type=submit]{
+	width:35%;
+	height:65px;
+	border-radius:32px;
+}
+#CajaForm, #Contact {
+    padding: 5px;
+    text-align: center;
+    background-color: #73d7f2;
+    border: dotted 1px #c3c3c3;
+}
+/*Caja oculta inicialmente, un efecto jQuery
+se encargara de mostrarla*/
+#CajaForm {
+    padding: 50px;
+    display: none;
+}
+#CajaPaneles {
+	padding:0;
+	margin-top:70px; 
+	
+}
+.Paneles {
+    width: 33%;
+	padding:6px;
+	min-height:200px;
+	display:table-cell;
+	margin:0.2em;
+	border:#fff solid 0.1em;
+	color:white;
+	border-radius:2px;
+}
+.Paneles h2{
+    margin-top:1px;
+	text-align:center;
+	font-size:18px;
+}
+.Paneles div{
+    width:100%;
+	margin:0px;
+	padding:4px; 
+}
+.Paneles  img{
+   
+	padding:2px;
+	margin:auto;
+	min-height:120px;
+	max-width: 110px;
+	margin-top:-65px;
+	margin-left:100px;
+}
+/*Fondo para la barra de los Titulos*/
+.ContenBarraTitulo{
+    width: 100%;
+	padding:0;
+	margin:auto;
+	background-image:url("../images/FondoTitulos.png");
+	min-height:40px;
+	font-size:2.0em;
+	color:#fff;
+	padding:8px;
+	box-sizing:border-box;
+}
+.BarraTitulo{
+	min-height:40px;
+	font-size:0.8em;
+	color:#fff;
+	padding:8px 0px;
+	box-sizing:border-box;
+}
+#dvAnimacion{background:#69ba2f;}
+#dvEfectos{background:#568e14;}
+#dvSlide{background:#0480a2;}
+
+#Formulario, #verForm {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+}
+
+#Formulario {
+    padding: 50px;
+    display: none;
+}
+.FondoCuerpo {
+    width:100%;
+	display:block;
+	margin:auto;
+	margin-bottom:0.2em;
+}
+/*Imagenes Tabla Articulos*/
+.table tr td img
+{
+		max-width:120px;
+}
+/*Para Slider*/
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+.BarraTitulo img
+{
+	max-width:30%;
+	margin-left:2px;
+}
+.col-lg-12 form 
+{
+	text-align:center;
+}
+.col-lg-12 form img
+{
+	max-width:40%;
+}
+
+/*RDW*/
+/* responsivetest.net */
+@media (max-width: 400px)
+{
+	/*Diseño de solo una columna
+	cuando se visualice en un movil
+	*/
+	/*Contenedores Principales*/
+	
+	#Cabecera,#Menu, #Contenido,.FondoCuerpo, #Contenido, #Pie,#CajaPaneles,#ContenPie, #ContenMenu
+	{
+		display:block;
+		width:100%;
+	}
+	/*Logo*/
+	#imgLogo{max-height:70px;}
+	#Cabecera{text-align:center;}
+	#Menu ul li{display:none;}
+	/*Paneles de 3 columnas lo ponemos en una*/
+	#CajaPaneles .Paneles{
+		display:block;
+		width:100%;
+		padding:6px;
+		box-sizing:border-box;
+	}
+	/*Reducimos el margen superior de los iconos en los manos*/
+	#CajaPaneles .Paneles img{
+		margin-top:10px;
+		height:80px;
+		border-radius:40px;
+	}
+	#CajaPaneles .Paneles h2{
+		margin-left:25px;
+	}
+	/*Modficamos la apariencia Social Media*/
+	.SocialMedia {		
+		padding:6px;
+		box-sizing:border-box;
+		margin:2px;	
+		width:100%;
+	}
+	#ContenPie{
+		background:none;
+	}
+	/*Reducimos el margen superior de los iconos en los manos*/
+	#CajaPaneles .Paneles .Textos{
+		font-size:9px;
+	}
+	
+	/*Ocultamos el Slide si se desea en Movil*/
+	#Slide
+	{	
+		display:none;
+	}
+}
+
+@media (min-width: 800px)
+{
+	#Cabecera,#Menu, #Contenido,.FondoCuerpo, #Contenido, #Pie,#CajaPaneles,#ContenPie, #ContenMenu
+	{
+		 
+	}
+	
+	#CajaPaneles .Paneles{
+		 
+		 
+	}
+}
